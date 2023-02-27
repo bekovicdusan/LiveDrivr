@@ -1,6 +1,13 @@
 import { View, Text, StyleSheet, Pressable } from "react-native";
 
-const CarrierOrDriver = () => {
+const CarrierOrDriver = ({navigation}) => {
+  const onCarrierRegister = () => {
+    navigation?.navigate('CarrierRegister')
+  }
+  const onDriverRegister = () => {
+    navigation?.navigate('DriverRegister')
+  }
+
   return (
     <View style={styles.screenContainer}>
       <View style={styles.headlineContainer}>
@@ -8,14 +15,14 @@ const CarrierOrDriver = () => {
       </View>
       <View style={styles.contentContainer}>
         <Text style={[styles.label, {marginTop: 70}]}>Register as a Carrier</Text>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={onCarrierRegister}>
           <Text style={styles.buttonText}>REGISTER AS A CARRIER</Text>
         </Pressable>
         <View style={styles.divider} />
         <Text style={styles.label}>Register as a Driver</Text>
-        <Pressable style={[styles.button]}>
+        <Pressable style={[styles.button]} onPress={onDriverRegister}>
           <Text style={[styles.buttonText]}>
-            LOG INTO AN EXISTING ACCOUNT
+            REGISTER AS A DRIVER
           </Text>
         </Pressable>
       </View>
