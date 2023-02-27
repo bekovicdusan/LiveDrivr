@@ -19,28 +19,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 30,
-    flex: 1,
-    backgroundColor: '#2699fb',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  headline: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: '500',
-    letterSpacing: 1
-  },
-  text: {
-    color: '#fff'
-  },
-  textInput: {
-    backgroundColor: 'white',
-    padding: 10,
-    marginTop: 10,
-    width: '100%'
-  }
-});

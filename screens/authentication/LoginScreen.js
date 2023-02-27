@@ -47,13 +47,6 @@ const LoginScreen = () => {
       </View>
     </View>
   );
-  // return (
-  //   <View>
-  //     <Text>
-  //       hello from login
-  //     </Text>
-  //   </View>
-  // )
 };
 
 const styles = StyleSheet.create({
@@ -77,7 +70,7 @@ const styles = StyleSheet.create({
   contentContainer: {
     flex: 3,
     alignItems: "center",
-    alignItems: 'center'
+    marginBottom: 30
   },
   scrollContainer: {
     width: '100%',

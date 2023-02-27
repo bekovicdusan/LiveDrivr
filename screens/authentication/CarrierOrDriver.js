@@ -1,13 +1,6 @@
 import { View, Text, StyleSheet, Pressable } from "react-native";
 
 const CarrierOrDriver = () => {
-  // return (
-  //   <View>
-  //     <Text>
-  //       hello from carrier
-  //     </Text>
-  //   </View>
-  // )
   return (
     <View style={styles.screenContainer}>
       <View style={styles.headlineContainer}>
